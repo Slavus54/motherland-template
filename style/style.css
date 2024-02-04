@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+	font-family: 'Cuprum', sans-serif;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    user-select: none;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+    letter-spacing: .1rem;
+}
+
+.label {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,239,1) 30%, rgba(102,23,22,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.05rem;
+    background-position: 0 100%;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    margin: 0;
+}
+
+.label:hover {
+    color:antiquewhite;
+    text-shadow: 0px 2px black;
+    background-size: 100%;
+}
+
+.headline {
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.poems-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem;     
+}
+
+.poems__text {
+    text-align: left;
+    max-height: 30rem;
+    overflow-y: scroll;
+}
+
+.poems__info {
+    opacity: .8;
+}
+
+.image__link {
+    border-radius: 1rem;
+    width: 20rem;
+    box-shadow: 0px 0px 3px 1px#c0c0c0;
+}
+
+.image__text {
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+.facts-item {
+    max-width: 20rem;
+}
+
+.fact__text {
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+.fact__type {
+    font-weight: 700;
+}
