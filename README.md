@@ -2,12 +2,12 @@
 
 ### Description  
 
-Short Landing Page with old design about my home district in Siberia: facts, photos and poetry...  
+Short Landing Page with simple design about my home district in Siberia: facts, photos and poetry...  
 
 ### Technologies  
 
-HTML and CSS only...  
+HTML and SCSS only...  
 
 ### URL  
 
-https://slavus54.github.io/motherland-template  
+https://slavus54.github.io/motherland-template    
