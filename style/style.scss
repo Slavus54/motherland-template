@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+$coal: #151716;
+$image-border-rad: 0.25rem;
+
+@mixin items {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@function widthByRadius($radius) {
+    @return $radius * 80
+}
+
+* {
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    user-select: none;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+    user-select: none;
+    letter-spacing: .1rem;
+}
+
+.headline {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.facts {
+    @include items;
+}
+
+.facts-item {
+    max-width: 20rem;
+}
+
+.fact__text {
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    transition: 0.1s ease-in-out;
+}
+
+.fact__text:hover {
+    text-decoration: underline;
+}
+
+.fact__type {
+    font-weight: 900;
+    opacity: .5;
+}
+
+.images {
+    @include items;
+    margin-top: 5rem
+}
+
+.images-item {
+    cursor: pointer;
+}
+
+.image__link {
+    border-radius: $image-border-rad;
+    width: widthByRadius($image-border-rad);
+    box-shadow: 0px 0px 3px 1px#c0c0c0;
+    transition: .25s ease-in-out;
+}
+
+.image__link:hover {
+    width: widthByRadius($image-border-rad * 1.25);
+}
+
+.image__text {
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+.poems {
+    @include items;
+}
+
+.poems-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem;     
+}
+
+.poems__text {
+    text-align: left;
+    word-spacing: 0.5rem;
+    line-height: 1.5rem;
+    text-indent: 2rem;
+    max-height: 30rem;
+    overflow-y: scroll;
+}
+
+.poems__text::-webkit-scrollbar {
+    display: none;
+}
+
+.poems__info {
+    opacity: .8;
+}
